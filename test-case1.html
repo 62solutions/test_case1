@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Mountain</title>
+</head>
+<body>
+    <section class="title-section">
+        <div class="header">
+            <div class="header-section">
+                <div class="header_item headerlogo">
+                    <img class="logo" src="img/logo.svg">
+                </div>
+                <div class="header_item headerButton"><a href="#about_us">О нас</a></div>
+                <div class="header_item headerButton"><a href="#tours">Туры</a></div>
+                <div class="header_item headerButton"><a href="#choose_tour">Подбор тура</a></div>
+                <div class="header_item headerButton"><a href="#blog">Блог</a></div>
+                <div class="header_item headerButton"><a href="#contacts">Контакты</a></div>
+            </div>
+            <div class="header-section">
+                <div class=phone><a href="tel:+78007773325">8 (800) 777-33-25</a></div>
+                <div class="searchIcon">
+                    <object type="image/svg+xml" data="img/search.svg">
+                    <img src="img/search.svg">
+                    </object>
+                </div>
+                <div class="userIcon">
+                    <object type="image/svg+xml" data="img/user.svg">
+                        <img src="img/user.svg">
+                    </object>
+                </div>
+            </div>
+        </div>
+        <h1>Эверест</h1>
+        <button>Подробнее</button>
+    </section>
+
+    <section id="about_us" class="about_us-section">
+        <h2>Туры с восхождением на вершины мира</h2>
+        <p>Мы являемся экспертами в организации альпинистских
+            туров для опытных альпинистов и для новичков.
+            Вы можете доверить нам полную организацию вашего приключения
+            от А до Я и быть уверенными в качестве и безопасности восхождения.</p>
+        <p>Наша компания предоставляет все необходимое: консультацию по выбору тура,
+            перелет, визу, бронирование проживания, питание, оборудование, необходимое для восхождения,
+            опытных гидов, полное сопровождение.</p>
+        <img src="img/map.png">
+    </section>
+
+    <section id="tours" class="favorite_tours-section">
+        <h2>Популярные туры</h2>
+        <div class="slider">
+            <div class="cardwrapper">
+                <img src="img/mappointer.svg" width="15px" height="20px">
+                <p>Россия</p>
+                <img src="img/favorite-mark.svg" width="15px" height="20px"> <!-- не понял функцию этой иконки, поэтому оставил просто картинкой -->
+
+                <div class="tour_description">
+                    <h4>Белуха</h4>
+                    <ul>
+                        <li>4506м</li>
+                        <li>12 дней</li>
+                        <li>от 45000р</li>
+                    </ul>
+                    <p>Средний уровень</p>
+                </div>
+            </div>
+
+            <div class="cardwrapper">
+                <img src="img/mappointer.svg" width="15px" height="20px">
+                <p>Россия</p>
+                <img src="img/favorite-mark.svg" width="15px" height="20px">
+
+                <div class="tour_description">
+                    <h4>Эльбрус</h4>
+                    <ul>
+                        <li>5642м</li>
+                        <li>10 дней</li>
+                        <li>от 25000р</li>
+                    </ul>
+                    <p>Средний уровень</p>
+                </div>
+            </div>
+
+            <div class="cardwrapper">
+                <img src="img/mappointer.svg" width="15px" height="20px">
+                <p>Россия</p>
+                <img src="img/favorite-mark.svg" width="15px" height="20px">
+
+                <div class="tour_description">
+                    <h4>Килиманджаро</h4>
+                    <ul>
+                        <li>5895м</li>
+                        <li>4 дня</li>
+                        <li>от 55000р</li>
+                    </ul>
+                    <p>Средний уровень</p>
+                </div>
+            </div>
+
+            <div class="prev_b">
+                <img src="img/arrow.svg">
+            </div>
+            <div class="next_b">
+                <img src="img/arrow.svg"> <!-- в архиве только одна стрелка - левая -->
+            </div>
+        </div>
+    </section>
+
+    <section class="table-section">
+        <h2>Россия</h2>
+        <p>Более 15 туров для альпинистов всех уровней</p>
+        <table>
+            <tr>
+                <th>Вершина</th>
+                <th>Высота</th>
+                <th>Уровень</th>
+                <th>Стоимость</th>
+            </tr>
+            <tr>
+                <td>Эльбрус</td>
+                <td>5648м</td>
+                <td>Средний</td>
+                <td>От 25000р</td>
+            </tr>
+            <tr>
+                <td>Казбек</td>
+                <td>5033м</td>
+                <td>Сложный</td>
+                <td>От 30000р</td>
+            </tr>
+            <tr>
+                <td>Белуха</td>
+                <td>4506m</td>
+                <td>Простой</td>
+                <td>От 20000р</td>
+            </tr>
+            <tr>
+                <td>Дыхтау</td>
+                <td>5204м</td>
+                <td>Сложный</td>
+                <td>От 40000р</td>
+            </tr>
+        </table>
+        <button>Смотреть все</button>
+    </section>
+
+    <section id="blog" class="blog-section">
+        <h2>Блог</h2>
+        <div class="sidebar">
+            <div class="sidebar_item">
+                <time datetime="2020-01-15">15 января 2020</time>
+                <p>Как подготовиться к первому восхождению на вершину</p>
+            </div>
+            <div class="sidebar_item">
+                <time datetime="2020-01-10">1 января 2020</time>
+                <p>Фестиваль Alpika Freeski Аlpindustria Fest Красная Поляна 13-16 февраля</p>
+            </div>
+            <div class="sidebar_item">
+                <time datetime="2019-12-20">20 декабря 2019</time>
+                <p>Особенности альпинизма на Камчатке. Все о Ключевой Сопке</p>
+            </div>
+            <div class="sidebar_item">
+                <time datetime="2015-11-18">15 декабря 2019</time>
+                <p>Что происходит с человеком на высоте более 3000 метров?</p>
+            </div>
+            <button>Читать все новости</button>
+        </div>
+
+        <div class="viewarea">
+            <img src="img/photo-77.jpg">
+            <time datetime="2020-01-15">15 января 2020</time>
+            <h4>Как подготовиться к первому восхождению на вершину</h4>
+               <p> Перед тем, как отправиться на покорение вершины горы, нужно не только привести
+                   в порядок свою физическую форму, но и тренировать выносливость, дыхательную
+                   и сердечно-сосудистую системы. Именно на них приходится максимальная нагрузка на высоте.
+                   Поэтому из-за недостаточной подготовки вы можете сойти на полпути. Чтобы этого не случилось,
+                   занимайтесь плаванием, бегом, велосипедом и кардиотренировками.</p>
+                <p>Как должны проходить тренировки? В первую очередь, тренировки должны проходить постоянно,
+                    эффективно и интенсивно. Кроме того, нагрузка постепенно должна увеличиваться.
+                    В случае с бегом обязательно делать это с учетом пульса. Грамотно спланированный бег
+                    позволит не только сбросить вес, но и укрепит сердечную мышцу. При беге с высоким пульсом
+                    вы позволите организму привыкнуть к недостатку кислорода — то, с чем обязательно встретитесь
+                    в горах. Для укрепления физической подготовки и повышения выносливости также бегайте в горку
+                    или в быстром темпе поднимайтесь по лестницам. И не забудьте отдохнуть за неделю до путешествия!</p>
+        </div>
+    </section>
+
+    <section id="choose_tour" class="choose_tour-section">
+        <div class="formfilling">
+            <h2>Нужна помощь с выбором тура?</h2>
+            <p>Заполните форму, наш менеджер свяжется с вами в ближайшее время и подберет подходящий тур</p>
+            <form>
+                <input type="text" placeholder="Имя"><br>
+                <input type="text" placeholder="Телефон"><br>
+                <input type="text" placeholder="E-mail"><br>
+                <input type="submit" value="Отправить">
+                <p>Нажимая кнопку, вы соглашаетесь с условиями обработки персональных данных</p>
+            </form>
+        </div>
+        <div>
+            <img src="img/photo-33.jpg" width="500px" height="500px">
+        </div>
+    </section>
+
+    <section id="contacts" class="contacts-section">
+        <div class="contact_info-section">
+            <h3>Контакты</h3>
+            <p>Адрес</p>
+            <p>Санкт-Петербург, ул. Большая Конюшенная, 19</p>
+            <p>Телефон</p>
+            <p>8 (800) 777-33-25</p>
+            <p>E-mail</p>
+            <p>info@mountain.ru</p>
+            <p>Социальные сети</p>
+            <img src="img/instagram.svg" width="20px" height="20px">
+            <img src="img/fb.svg" width="20px" height="20px">
+            <img src="img/twitter.svg" width="20px" height="20px">
+        </div>
+        <div id="map">
+            <img src="img/map-office.png" width="500px" height="500px">
+            >
+        </div>
+    </section>
+
+    <section class="footer-section">
+        <p>Maroon © 2020 Все права защищены</p>
+        <img class="logo" src="img/logo.svg">
+        <p>Политика конфиденциальности</p>
+    </section>
+
+</body>
+</html>
