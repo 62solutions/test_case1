@@ -5,73 +5,102 @@
     <title>Mountain</title>
 </head>
 <body>
-    <section class="title-section">
-        <div class="header">
-            <div class="header-section">
-                <div class="header_item headerlogo">
-                    <img class="logo" src="img/logo.svg">
-                </div>
-                <div class="header_item headerButton"><a href="#about_us">О нас</a></div>
-                <div class="header_item headerButton"><a href="#tours">Туры</a></div>
-                <div class="header_item headerButton"><a href="#choose_tour">Подбор тура</a></div>
-                <div class="header_item headerButton"><a href="#blog">Блог</a></div>
-                <div class="header_item headerButton"><a href="#contacts">Контакты</a></div>
-            </div>
-            <div class="header-section">
-                <div class=phone><a href="tel:+78007773325">8 (800) 777-33-25</a></div>
-                <div class="searchIcon">
-                    <object type="image/svg+xml" data="img/search.svg">
-                    <img src="img/search.svg">
-                    </object>
-                </div>
-                <div class="userIcon">
-                    <object type="image/svg+xml" data="img/user.svg">
-                        <img src="img/user.svg">
-                    </object>
+    <header class="header">
+        <div class="header_top">
+            <div class="container">
+                <div class="header_top-inner">
+                    <div class="logo">
+                       <a class="logo_link" href="#">
+                         <img class="logo_img" src="img/logo.svg" alt="logo">
+                       </a>
+                    </div>
+                    <nav class="menu">
+                       <ul class="menu_list">
+                           <li class="menu_list-item">
+                               <a class="menu_link" href="#aboutUs">О нас</a>
+                           </li>
+                           <li class="menu_list-item">
+                               <a class="menu_link" href="#tours">Туры</a>
+                           </li>
+                           <li class="menu_list-item">
+                               <a class="menu_link" href="#chooseTour">Подбор тура</a>
+                           </li>
+                           <li class="menu_list-item">
+                               <a class="menu_link" href="#blog">Блог</a>
+                           </li>
+                           <li class="menu_list-item">
+                                <a class="menu_link" href="#contacts">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class=phone><a href="tel:+78007773325">8 (800) 777-33-25</a></div>
+                    <div class="searchIcon">
+                        <object type="image/svg+xml" data="img/search.svg">
+                            <img src="img/search.svg">
+                        </object>
+                    </div>
+                    <div class="userIcon">
+                        <object type="image/svg+xml" data="img/user.svg">
+                            <img src="img/user.svg">
+                        </object>
+                    </div>
                 </div>
             </div>
         </div>
-        <h1>Эверест</h1>
-        <button>Подробнее</button>
-    </section>
-
-    <section id="about_us" class="about_us-section">
-        <h2>Туры с восхождением на вершины мира</h2>
-        <p>Мы являемся экспертами в организации альпинистских
-            туров для опытных альпинистов и для новичков.
-            Вы можете доверить нам полную организацию вашего приключения
-            от А до Я и быть уверенными в качестве и безопасности восхождения.</p>
-        <p>Наша компания предоставляет все необходимое: консультацию по выбору тура,
-            перелет, визу, бронирование проживания, питание, оборудование, необходимое для восхождения,
-            опытных гидов, полное сопровождение.</p>
-        <img src="img/map.png">
-    </section>
-
-    <section id="tours" class="favorite_tours-section">
-        <h2>Популярные туры</h2>
-        <div class="slider">
-            <div class="cardwrapper">
-                <img src="img/mappointer.svg" width="15px" height="20px">
-                <p>Россия</p>
-                <img src="img/favorite-mark.svg" width="15px" height="20px"> <!-- не понял функцию этой иконки, поэтому оставил просто картинкой -->
-
-                <div class="tour_description">
-                    <h4>Белуха</h4>
-                    <ul>
-                        <li>4506м</li>
-                        <li>12 дней</li>
-                        <li>от 45000р</li>
-                    </ul>
-                    <p>Средний уровень</p>
+        <div class="header_content">
+            <div class="container">
+                <div class="header_content-inner">
+                    <h1>Эверест</h1>
+                    <button>Подробнее</button>
                 </div>
             </div>
+        </div>
+    </header>
 
-            <div class="cardwrapper">
-                <img src="img/mappointer.svg" width="15px" height="20px">
-                <p>Россия</p>
-                <img src="img/favorite-mark.svg" width="15px" height="20px">
+    <section class="about" id="aboutUs" >
+        <div class="container">
+            <div class="about_text">
+                <h2>Туры с восхождением на вершины мира</h2>
+                <p>Мы являемся экспертами в организации альпинистских
+                    туров для опытных альпинистов и для новичков.
+                    Вы можете доверить нам полную организацию вашего приключения
+                    от А до Я и быть уверенными в качестве и безопасности восхождения.</p>
+                <p>Наша компания предоставляет все необходимое: консультацию по выбору тура,
+                    перелет, визу, бронирование проживания, питание, оборудование, необходимое для восхождения,
+                    опытных гидов, полное сопровождение.</p>
+            </div>
+            <div class="about_picture">
+                <img src="img/map.png">
+            </div>
 
-                <div class="tour_description">
+        </div>
+    </section>
+
+    <section class="favorite_tours" id="tours">
+       <div class="container">
+           <div class="title">
+                <h2>Популярные туры</h2>
+           </div>
+           <div class="favorite_tours-slider">
+               <div class="cardwrapper">
+                   <img src="img/mappointer.svg" width="15px" height="20px">
+                   <p>Россия</p>
+                   <img src="img/favorite-mark.svg" width="15px" height="20px"> <!-- не понял функцию этой иконки, поэтому оставил просто картинкой -->
+                   <div class="tour_description">
+                       <h4>Белуха</h4>
+                       <ul>
+                           <li>4506м</li>
+                           <li>12 дней</li>
+                           <li>от 45000р</li>
+                       </ul>
+                       <p>Средний уровень</p>
+                   </div>
+               </div>
+               <div class="cardwrapper">
+                    <img src="img/mappointer.svg" width="15px" height="20px">
+                    <p>Россия</p>
+                    <img src="img/favorite-mark.svg" width="15px" height="20px">
+                    <div class="tour_description">
                     <h4>Эльбрус</h4>
                     <ul>
                         <li>5642м</li>
@@ -79,15 +108,13 @@
                         <li>от 25000р</li>
                     </ul>
                     <p>Средний уровень</p>
-                </div>
-            </div>
-
-            <div class="cardwrapper">
-                <img src="img/mappointer.svg" width="15px" height="20px">
-                <p>Россия</p>
-                <img src="img/favorite-mark.svg" width="15px" height="20px">
-
-                <div class="tour_description">
+                    </div>
+               </div>
+                <div class="cardwrapper">
+                    <img src="img/mappointer.svg" width="15px" height="20px">
+                    <p>Россия</p>
+                    <img src="img/favorite-mark.svg" width="15px" height="20px">
+                    <div class="tour_description">
                     <h4>Килиманджаро</h4>
                     <ul>
                         <li>5895м</li>
@@ -97,77 +124,91 @@
                     <p>Средний уровень</p>
                 </div>
             </div>
-
-            <div class="prev_b">
+            <div class="prev_btn">
                 <img src="img/arrow.svg">
             </div>
-            <div class="next_b">
+            <div class="next_btn">
                 <img src="img/arrow.svg"> <!-- в архиве только одна стрелка - левая -->
             </div>
+
+       </div>
+    </section>
+
+    <section class="table">
+        <div class="container">
+            <div class="table_title">
+                <h2>Россия</h2>
+                <p>Более 15 туров для альпинистов всех уровней</p>
+            </div>
+                <table>
+                    <tr>
+                        <th>Вершина</th>
+                        <th>Высота</th>
+                        <th>Уровень</th>
+                        <th>Стоимость</th>
+                    </tr>
+                    <tr>
+                        <td>Эльбрус</td>
+                        <td>5648м</td>
+                        <td>Средний</td>
+                        <td>От 25000р</td>
+                    </tr>
+                    <tr>
+                        <td>Казбек</td>
+                        <td>5033м</td>
+                        <td>Сложный</td>
+                        <td>От 30000р</td>
+                    </tr>
+                    <tr>
+                        <td>Белуха</td>
+                        <td>4506m</td>
+                        <td>Простой</td>
+                        <td>От 20000р</td>
+                    </tr>
+                    <tr>
+                        <td>Дыхтау</td>
+                        <td>5204м</td>
+                        <td>Сложный</td>
+                        <td>От 40000р</td>
+                    </tr>
+                </table>
+            <button>Смотреть все</button>
         </div>
     </section>
 
-    <section class="table-section">
-        <h2>Россия</h2>
-        <p>Более 15 туров для альпинистов всех уровней</p>
-        <table>
-            <tr>
-                <th>Вершина</th>
-                <th>Высота</th>
-                <th>Уровень</th>
-                <th>Стоимость</th>
-            </tr>
-            <tr>
-                <td>Эльбрус</td>
-                <td>5648м</td>
-                <td>Средний</td>
-                <td>От 25000р</td>
-            </tr>
-            <tr>
-                <td>Казбек</td>
-                <td>5033м</td>
-                <td>Сложный</td>
-                <td>От 30000р</td>
-            </tr>
-            <tr>
-                <td>Белуха</td>
-                <td>4506m</td>
-                <td>Простой</td>
-                <td>От 20000р</td>
-            </tr>
-            <tr>
-                <td>Дыхтау</td>
-                <td>5204м</td>
-                <td>Сложный</td>
-                <td>От 40000р</td>
-            </tr>
-        </table>
-        <button>Смотреть все</button>
-    </section>
+    <section id="blog" class="blog">
+       <div class="container">
+            <h2>Блог</h2>
+            <div class="blog_sidebar">
+                <a class="sidebar_item-link" href="#">
+                    <div class="sidebar_item sidebar_item-focused">
+                            <time datetime="2020-01-15">15 января 2020</time>
+                            <p>Как подготовиться к первому восхождению на вершину</p>
+                    </div>
+                </a>
+                <a class="sidebar_item-link" href="#">
+                    <div class="sidebar_item sidebar_item-focused">
+                            <time datetime="2020-01-10">1 января 2020</time>
+                            <p>Фестиваль Alpika Freeski Аlpindustria Fest Красная Поляна 13-16 февраля</p>
+                    </div>
+                </a>
+                <a class="sidebar_item-link" href="#">
+                    <div class="sidebar_item sidebar_item-focused">
+                        <time datetime="2019-12-20">20 декабря 2019</time>
+                        <p>Особенности альпинизма на Камчатке. Все о Ключевой Сопке</p>
+                    </div>
+                </a>
+                <a class="sidebar_item-link" href="#">
+                    <div class="sidebar_item sidebar_item-focused">
+                        <time datetime="2015-11-18">15 декабря 2019</time>
+                        <p>Что происходит с человеком на высоте более 3000 метров?</p>
+                    </div>
+                </a>
+                <button>Читать все новости</button>
+             </div>
+       </div>
 
-    <section id="blog" class="blog-section">
-        <h2>Блог</h2>
-        <div class="sidebar">
-            <div class="sidebar_item">
-                <time datetime="2020-01-15">15 января 2020</time>
-                <p>Как подготовиться к первому восхождению на вершину</p>
-            </div>
-            <div class="sidebar_item">
-                <time datetime="2020-01-10">1 января 2020</time>
-                <p>Фестиваль Alpika Freeski Аlpindustria Fest Красная Поляна 13-16 февраля</p>
-            </div>
-            <div class="sidebar_item">
-                <time datetime="2019-12-20">20 декабря 2019</time>
-                <p>Особенности альпинизма на Камчатке. Все о Ключевой Сопке</p>
-            </div>
-            <div class="sidebar_item">
-                <time datetime="2015-11-18">15 декабря 2019</time>
-                <p>Что происходит с человеком на высоте более 3000 метров?</p>
-            </div>
-            <button>Читать все новости</button>
-        </div>
-
-        <div class="viewarea">
+        <div class="blog_viewarea">
             <img src="img/photo-77.jpg">
             <time datetime="2020-01-15">15 января 2020</time>
             <h4>Как подготовиться к первому восхождению на вершину</h4>
@@ -186,24 +227,26 @@
         </div>
     </section>
 
-    <section id="choose_tour" class="choose_tour-section">
-        <div class="formfilling">
-            <h2>Нужна помощь с выбором тура?</h2>
-            <p>Заполните форму, наш менеджер свяжется с вами в ближайшее время и подберет подходящий тур</p>
-            <form>
-                <input type="text" placeholder="Имя"><br>
-                <input type="text" placeholder="Телефон"><br>
-                <input type="text" placeholder="E-mail"><br>
-                <input type="submit" value="Отправить">
-                <p>Нажимая кнопку, вы соглашаетесь с условиями обработки персональных данных</p>
-            </form>
-        </div>
-        <div>
-            <img src="img/photo-33.jpg" width="500px" height="500px">
+    <section  class="choose_tour"id="chooseTour">
+        <div class="container">
+            <div class="formfilling">
+                <h2>Нужна помощь с выбором тура?</h2>
+                <p>Заполните форму, наш менеджер свяжется с вами в ближайшее время и подберет подходящий тур</p>
+                <form>
+                    <input type="text" placeholder="Имя"><br>
+                    <input type="text" placeholder="Телефон"><br>
+                    <input type="text" placeholder="E-mail"><br>
+                    <input type="submit" value="Отправить">
+                    <p>Нажимая кнопку, вы соглашаетесь с условиями обработки персональных данных</p>
+                </form>
+            </div>
+            <div>
+                <img src="img/photo-33.jpg" width="500px" height="500px">
+            </div>
         </div>
     </section>
 
-    <section id="contacts" class="contacts-section">
+    <section id="contacts" class="contacts">
         <div class="contact_info-section">
             <h3>Контакты</h3>
             <p>Адрес</p>
@@ -223,7 +266,7 @@
         </div>
     </section>
 
-    <section class="footer-section">
+    <section class="footer">
         <p>Maroon © 2020 Все права защищены</p>
         <img class="logo" src="img/logo.svg">
         <p>Политика конфиденциальности</p>
